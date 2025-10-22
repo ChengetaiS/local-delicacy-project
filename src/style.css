@@ -38,7 +38,8 @@ header h2 {
   font-size: 40px;
 }
 
-header a {
+header a,
+.third-section a {
   text-decoration: none;
   color: black;
   background-color: white;
@@ -49,6 +50,7 @@ header a {
   border: 1px solid black;
   font-size: 12px;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .second-section {
@@ -58,7 +60,7 @@ header a {
   padding: 90px;
 
   font-size: 14px;
-  background-color: #3d1703;
+  background-color: #1c1008;
 }
 
 .sadza-oxtail {
@@ -74,24 +76,26 @@ header a {
 }
 
 .third-section {
-  padding: 30px;
-  background-color: #aa8873;
+  padding: 30px 90px;
+  background-color: #741d02;
   text-align: center;
 }
 
 .total-cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
+  gap: 60px;
 }
 
 .card {
-  background-color: #3d1703;
+  background-color: #1c1008;
   padding: 20px;
 }
 
-.card img {
+.card img,
+.embeded {
   width: 100%;
+  aspect-ratio: 3/2;
 }
 
 .card p {
@@ -157,5 +161,13 @@ footer p {
   .container2 {
     grid-template-columns: 1fr;
     padding: 30px;
+  }
+
+  .total-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .third-section {
+    padding: 30px 30px;
   }
 }
